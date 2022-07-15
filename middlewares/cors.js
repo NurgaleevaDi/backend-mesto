@@ -7,7 +7,7 @@ const allowedCors = [
   'http://nurgaleeva.students.nomoredomains.xyz',
 ];
 // eslint-disable-next-line consistent-return
-module.exports.cors = (req, res, next) => {
+const cors = (req, res, next) => {
   console.log(req.headers);
   const { origin } = req.headers;
   const { method } = req;
@@ -25,3 +25,4 @@ module.exports.cors = (req, res, next) => {
   }
   next();
 };
+module.exports = { cors };
