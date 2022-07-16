@@ -4,6 +4,8 @@ const allowedCors = [
   'http://localhost:3000',
   'http://nurgaleeva.students.nomoredomains.xyz',
   'http://api.backend.students.nomoredomains.xyz',
+  'https://nurgaleeva.students.nomoredomains.xyz',
+  'https://api.backend.students.nomoredomains.xyz',
 ];
 // eslint-disable-next-line consistent-return
 const cors = (req, res, next) => {
