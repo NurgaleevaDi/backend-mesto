@@ -8,6 +8,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { cors } = require('./middlewares/cors');
 
 console.log('NODE');
+// console.log('env ', process.env.NODE_ENV);
 
 const app = express();
 // const { PORT = 3000 } = process.env;
