@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config();
+// require('dotenv').config();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const { errors, celebrate, Joi } = require('celebrate');
@@ -10,8 +10,8 @@ const { cors } = require('./middlewares/cors');
 // console.log('env ', process.env.NODE_ENV);
 
 const app = express();
-const { PORT = 3000 } = process.env;
-// const PORT = 3000;
+// const { PORT = 3000 } = process.env;
+const PORT = 3000;
 const {
   createUser,
   login,
