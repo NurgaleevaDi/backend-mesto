@@ -1,4 +1,3 @@
-// const User = require('../models/users');
 const { checkToken } = require('../helpers/jwt');
 const { ERROR_UNAUTHORIZED } = require('../helpers/errors');
 
