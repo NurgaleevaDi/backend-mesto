@@ -11,8 +11,8 @@ console.log('NODE');
 // console.log('env ', process.env.NODE_ENV);
 
 const app = express();
-// const { PORT = 3000 } = process.env;
-const PORT = 3000;
+const { PORT = 3000 } = process.env;
+// const PORT = 3000;
 const {
   createUser,
   login,
