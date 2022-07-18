@@ -117,12 +117,13 @@ module.exports.login = (req, res, next) => {
     .then((token) => {
       res.send({ token });
     })
-    .catch((err) => {
-      if (err.statusCode === 403) {
-        next(new ForbiddenError('Необходимо авторизоваться'));
-      }
-      next(err);
-    });
+    // .catch((err) => {
+    //   if (err.statusCode === 403) {
+    //     next(new ForbiddenError('Необходимо авторизоваться'));
+    //   }
+    //   next(err);
+    // });
+    .catch(next);
 };
 
 module.exports.updateUser = (req, res, next) => {
