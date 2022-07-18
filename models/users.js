@@ -1,11 +1,7 @@
 const mongoose = require('mongoose');
 const isEmail = require('validator/lib/isEmail');
-// const isURL = require('validator/lib/isURL');
-// const validateLink = require('../helpers/validateLink');
 
 const { validateLink } = require('../helpers/validateLink');
-// const regex = /(https?:\/\/)(w{3}\.)
-// ?(((\d{1,3}\.){3}\d{1,3})|((\w-?)+\.(ru|com|net)))(:\d{2,5})?((\/.+)+)?\/?#?/;
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -43,7 +39,6 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minlength: 8,
     select: false, // чтобы API не возвращал хеш пароля
   },
 });
