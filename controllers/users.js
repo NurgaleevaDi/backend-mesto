@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const NotFoundError = require('../errors/not-found-error');
-const ForbiddenError = require('../errors/forbidden-error');
 const BadRequestError = require('../errors/bad-request-error');
 const {
   MONGO_DUPLICATE_ERROR,
